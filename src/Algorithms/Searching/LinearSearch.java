@@ -11,6 +11,8 @@ public class LinearSearch {
             System.out.println("The number is in array at index of "+linearSearch(arr,number));
         }
 
+        System.out.println(linearSearch("rushi",'s'));
+
     }
     public static int linearSearch(int[] arr, int n) {
         for (int i = 0; i < arr.length; i++) {
@@ -36,6 +38,16 @@ public class LinearSearch {
             return linearSearch(index+1,arr,n);
         }
     }
+
+    public static int linearSearch(String s, char ch) {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ch)
+                return i;
+        }
+        return -1;
+    }
+
+
 
 
 }
