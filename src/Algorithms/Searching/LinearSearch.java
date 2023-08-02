@@ -47,6 +47,15 @@ public class LinearSearch {
         return -1;
     }
 
+    public static int[] linearSearch(int[][] arr, int n) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] == n)
+                    return new int[] {i,j};
+            }
+        }
+        return new int[]{-1,-1};
+    }
 
 
 
